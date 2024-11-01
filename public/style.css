@@ -3,4 +3,107 @@ body, #app, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
+    background-color: rgb(227, 245, 252);
+    font-family: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap';
+    font-family: 'Roboto', sans-serif; /* Change to your chosen font */
 }
+
+:root {
+    --primary-color: #2684ad;
+    --secondary-color: #d1d1d1 
+}
+
+.loginPage {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.loginContainer {
+    margin: auto;
+    padding: 3rem;
+    box-sizing: border-box;
+    min-height: 30rem;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Create a positioning context */
+    z-index: 2; /* Parent is above the child */
+}
+
+.topLogin {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.topLogin h1 {
+    color: var(--primary-color);
+    font-size: 4em;
+    margin: 1rem
+}
+
+.middleLogin {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    box-sizing: border-box;
+    min-width: 18rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.middleLogin .inputContainer {
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 7px;
+    border: 2px solid var(--secondary-color);
+    box-sizing: border-box;
+}
+.middleLogin .loginButtonContainer {
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 7px;
+    box-sizing: border-box;
+    border: 2px solid var(--primary-color);
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+}
+.inputContainer input {
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.inputContainer img{
+    height: 70%;
+    width: auto;
+    margin-top: .3rem;
+
+}
+
+.loginButtonContainer {
+    background-color: var(--primary-color); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    color: white;
+    transition: .2s;
+}
+
+.loginButtonContainer:hover {
+    background-color: white;
+    color: var(--primary-color);
+    transition: .2s;
+    cursor: pointer;
+}
+
